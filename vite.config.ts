@@ -11,12 +11,9 @@ export default defineConfig({
     open: true
   },
   build: {
-    rollupOptions: {
-      output: {
-        format: 'es'
-      }
-    }
+    assetsDir: 'assets',
   },
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
