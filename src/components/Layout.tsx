@@ -281,9 +281,9 @@ const Layout = () => {
             <footer className="w-full py-6 border-t" style={headerStyle}>
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-col md:flex-row items-center gap-2">
                             <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} District 5B</p>
-                            <p className="text-sm text-muted-foreground">&bull; These pages are neither endorsed nor approved by Alcoholics Anonymous World Services, Inc.</p>
+                            <p className="text-xs text-center md:text-sm md:text-left text-muted-foreground">These pages are neither endorsed nor approved by Alcoholics Anonymous World Services, Inc.</p>
                         </div>
 
                         <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
