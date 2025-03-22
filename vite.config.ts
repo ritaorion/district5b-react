@@ -10,6 +10,13 @@ export default defineConfig({
     port: 5173,
     open: true
   },
+  build: {
+    rollupOptions: {
+      output: {
+        format: 'es'
+      }
+    }
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
