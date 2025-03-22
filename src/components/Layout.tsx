@@ -109,10 +109,10 @@ const Layout = () => {
                                 open={isMobileMenuOpen}
                                 onOpenChange={setIsMobileMenuOpen}
                             >
-                                <SheetTrigger asChild>
-                                    <Button variant="ghost" size="icon">
+                                <SheetTrigger>
+                                    <span className="flex justify-center items-center w-10 h-10 rounded-md hover:bg-gray-100">
                                         <Menu className="h-5 w-5"/>
-                                    </Button>
+                                    </span>
                                 </SheetTrigger>
                                 <SheetContent side="right" className={'p-6'}>
                                     <SheetTitle>

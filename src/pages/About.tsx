@@ -68,8 +68,8 @@ function HeroSection() {
                         </div>
                     </div>
 
-                    {/* Zoom info card - positioned over the image */}
-                    <Card className="absolute bottom-4 left-4 lg:-left-16 max-w-xs bg-white shadow-lg">
+                    {/* Zoom info card - repositioned to prevent text overlap */}
+                    <Card className="absolute bottom-4 right-4 lg:bottom-8 lg:left-4 max-w-xs bg-white shadow-lg">
                         <CardContent className="p-4">
                             <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0">

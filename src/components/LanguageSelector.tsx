@@ -7,7 +7,6 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
 
 interface Language {
     code: string;
@@ -34,14 +33,12 @@ const LanguageSelector: React.FC = () => {
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="flex items-center gap-2 w-32">
-                    <span>{currentLanguage.flag}</span>
-                    <span className="flex-1 text-left">{currentLanguage.name}</span>
-                    <ChevronDown className="h-4 w-4" />
-                </Button>
+            <DropdownMenuTrigger className="flex items-center gap-2 w-28 px-4 py-1.5 border rounded-md hover:bg-gray-100">
+                <span>{currentLanguage.flag}</span>
+                <span className="flex-1 text-left">{currentLanguage.name}</span>
+                <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-32">
+            <DropdownMenuContent align="end" className="w-28">
                 {languages.map((language) => (
                     <DropdownMenuItem
                         key={language.code}
